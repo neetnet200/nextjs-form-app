@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Fira+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap");
+html,
+body {
+  background: black;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 720px) {
+  .container {
+    margin: 20px;
+  }
+
+  .row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .box-01 {
+    background: none;
+    position: relative;
+    flex: 1;
+    max-width: 360px;
+    height: 360px;
+    margin: 10px;
+  }
+  .box-02 {
+    background: none;
+    justify-content: left;
+    flex: 2;
+    max-width: 360px;
+    height: 360px;
+    margin: auto;
+  }
+}
+.button {
+  height: 60px;
+  width: 220px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 28px;
+  background: white;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  overflow: hidden;
+  font-family: "Source Code Pro", monospace;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 50px;
+  margin-left: 70px;
+}
+
+.button:hover {
+  background: #f53396;
+  color: #fff;
+}

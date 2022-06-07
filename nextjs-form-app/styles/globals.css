@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Fira+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+html,
+body {
+  background: black;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 720px) {
+  .container {
+    margin: 10px;
+  }
+  .row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+.button {
+  height: 60px;
+  width: 220px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 28px;
+  background: white;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  overflow: hidden;
+  font-family: "Source Code Pro", monospace;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 50px;
+  margin-left: 70px;
+}
+.button:hover {
+  background: #f53396;
+  color: #fff;
+}
+
+/********************
+        Form
+*********************/
+
+.form-wrap {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.logo {
+  height: 110px;
+  width: 110px;
+  padding-bottom: 40px;
+  margin-top: -80px;
+}
+.form-container {
+  width: 320px;
+  height: 600px;
+  border: solid #28231d;
+  border-radius: 10px;
+  padding: 20px;
+}
+.heading-form {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+.heading {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 18px;
+  color: #28231d;
+  display: flex;
+  flex-direction: row;
+}
+.form-container-inner-wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-size: 16px;
+}
+.input-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.label {
+  font-family: "Helvetica", "sans serif";
+  font-weight: 400;
+  font-size: 12px;
+  color: #fff;
+  padding: 8px;
+}
+.input {
+  font-family: "Source Code Pro", monospace;
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+  height: 28px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.input:focus {
+  outline: none;
+}
+.textarea {
+  font-family: "Source Code Pro", monospace;
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+  height: 80px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.textarea:focus {
+  outline: none;
+}
+.next-button {
+  font-family: "Source Code Pro", monospace;
+  font-size: 20px;
+  background-color: #fbb502;
+  width: 300px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  padding: 10px;
+  margin-top: 35px;
+  cursor: pointer;
+  transition: 500ms ease all;
+}
+.next-button:hover {
+  background-color: #eed8a5;
+  color: black;
+  transform: scale(0.98);
+}
+.submit-button {
+  font-family: "Source Code Pro", monospace;
+  font-size: 20px;
+  background-color: #f53396;
+  color: #fff;
+  width: 300px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  overflow: hidden;
+  padding: 10px;
+  margin-top: 65px;
+  cursor: pointer;
+  transition: 500ms ease all;
+}
+.submit-button:hover {
+  background-color: #fff;
+  color: black;
+  border: solid #afada9;
+  transform: scale(0.98);
+}
+.thankyou {
+  font-family: "Source Code Pro", monospace;
+  font-size: 30px;
+  color: #fff;
+}
