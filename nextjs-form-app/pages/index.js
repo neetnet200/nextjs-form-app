@@ -1,15 +1,26 @@
 import { useRouter } from "next/router";
+import Image from 'next/image';
 
 export default function Home() {
   const router = useRouter();
 
   return (
     <div>
-      <img src={`/main_image_mobile.png`} width="100%" height="100%" />
+      <Image
+      src="/main_image_mobile.png" 
+      alt="coffee beans" 
+      width={1900} 
+      height={800}
+      
+      />
       <div className="container">
         <div className="row">
           <div>
-            <img src={`/mobile_heading.png`} width="100%" height="100%" />
+            <Image
+            src="/mobile_heading.png"
+            alt="heading text"  
+            width={360} 
+            height={360} />
           </div>
 
           <div>
