@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 import axios from "axios";
+import Image from 'next/image';
 
 export default function Form() {
   const [formStep, setFormStep] = React.useState(0);
@@ -74,7 +75,13 @@ export default function Form() {
 
   return (
     <div className="form-wrap">
-      <img className="logo" src={`/square_farmore_logo_small.png`} />
+      <Image 
+      className="logo" 
+      src="/square_farmore_logo_small.png"
+      alt="Farmore logo" 
+      height={110}
+      width={110}
+      />
       <div className="form-container">
         <div className="heading-form">
           <h1 className="heading">
